@@ -24,7 +24,7 @@ $("#add-train-btn").on("click", function(event) {
 // Grab user inputs
 var trainName = $("#train-name-input").val().trim();
 var destination = $("#destination-input").val().trim();
-var trainTime = $("#time-input").val().trim();
+var trainTime = moment($("#time-input").val().trim(), 'HH:mm').format("HH:mm");
 var frequency = $("#frequency-input").val().trim();
 
 
