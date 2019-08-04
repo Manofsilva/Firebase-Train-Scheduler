@@ -29,11 +29,13 @@ var frequency = $("#frequency-input").val().trim();
 
   // Creation of local-temporary object to store data
   var newTrain = {
-    trainName = trainName,
-    destination = destination,
-    frequency = frequency,
-    trainTime = trainTime
-}
-
+    tname: trainName,
+    place: destination,
+    freq: frequency,
+    tTime: trainTime
+};
+// upload data store in the above local object and push to the Firebase database
+database.ref().push(newTrain);
+console.log(newTrain.tname);
 
 });
