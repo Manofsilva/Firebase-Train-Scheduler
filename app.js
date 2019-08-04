@@ -14,3 +14,11 @@ var firebaseConfig = {
 
   // create a variable to reference the database
   var database = firebase.database();
+
+  // Creation of local-temporary object to store data
+  var newTrain = {
+      trainName = trainName,
+      destination = destination,
+      frequency = frequency,
+      trainTime = trainTime
+  }
