@@ -44,3 +44,8 @@ $("#destination-input").val("");
 $("#time-input").val("");
 $("#frequency-name-input").val("");
 });
+
+// Create Firebase event for adding a new Train utilizing an .on child_added listener
+database.ref().on("child_added", function(childsnapshot) {
+    console.log(childsnapshot.val());
+})
