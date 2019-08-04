@@ -15,10 +15,27 @@ var firebaseConfig = {
   // create a variable to reference the database
   var database = firebase.database();
 
+
+
+//   Onclick event listener to add new trains when the submit button is clicked and prevents the page from reloading
+$("#add-train-btn").on("click", function(event) {
+    event.preventDefault();
+
+// Grab user inputs
+var trainName = $("#train-name-input").val().trim();
+var destination = $("#destination-input").val().trim();
+var trainTime = $("#time-input").val().trim();
+var frequency = $("#frequency-input").val().trim();
+
+
+
   // Creation of local-temporary object to store data
-  var newTrain = {
-      trainName = trainName,
-      destination = destination,
-      frequency = frequency,
-      trainTime = trainTime
-  }
+//   var newTrain = {
+//     trainName = trainName,
+//     destination = destination,
+//     frequency = frequency,
+//     trainTime = trainTime
+// }
+
+
+});
