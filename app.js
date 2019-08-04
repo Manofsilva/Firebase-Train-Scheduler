@@ -27,15 +27,13 @@ var destination = $("#destination-input").val().trim();
 var trainTime = moment($("#time-input").val().trim(), 'HH:mm').format("HH:mm");
 var frequency = $("#frequency-input").val().trim();
 
-
-
   // Creation of local-temporary object to store data
-//   var newTrain = {
-//     trainName = trainName,
-//     destination = destination,
-//     frequency = frequency,
-//     trainTime = trainTime
-// }
+  var newTrain = {
+    trainName = trainName,
+    destination = destination,
+    frequency = frequency,
+    trainTime = trainTime
+}
 
 
 });
