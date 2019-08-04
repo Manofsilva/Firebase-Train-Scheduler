@@ -31,11 +31,16 @@ var frequency = $("#frequency-input").val().trim();
   var newTrain = {
     tname: trainName,
     place: destination,
-    freq: frequency,
+    freq: frequency, 
     tTime: trainTime
 };
-// upload data store in the above local object and push to the Firebase database
+// upload data stored in the above local object and push to the Firebase database
 database.ref().push(newTrain);
 console.log(newTrain.tname);
 
+// Clears all of the text-boxes
+$("#train-name-input").val("");
+$("#destination-input").val("");
+$("#time-input").val("");
+$("#frequency-name-input").val("");
 });
