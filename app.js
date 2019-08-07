@@ -79,7 +79,16 @@ console.log("Minutes Till Next Train: " + minToTrain);
 var nextTrain = moment().add(minToTrain, "minutes").format("hh:mm")
 // console.log("Arrival Time: " + moment(nextTrain).format("hh:mm"));
 
+// Create a table to have information appended
+// var newTable = $("<tr>").append(
+//     $("td").text(trainName),
+//     $("td").text(destination),
+//     $("td").text(frequency),
+//     $("td").text(nextTrain),
+//     $("td").text(minToTrain),
+// );
+
 // // Append the new row to the table
-$("#train-schedule-table > tbody").append("<tr><td>" + trainName + "<tr><td>" + destination + "<tr><td>" + frequency + "<tr><td>" + nextTrain + "<tr><td>" + minToTrain)
+$("#train-schedule-table > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + nextTrain + "</td><td>" + minToTrain)
 
 });
