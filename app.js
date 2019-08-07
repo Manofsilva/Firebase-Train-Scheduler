@@ -79,5 +79,7 @@ console.log("Minutes Till Next Train: " + minToTrain);
 var nextTrain = moment().add(minToTrain, "minutes").format("hh:mm")
 // console.log("Arrival Time: " + moment(nextTrain).format("hh:mm"));
 
+// // Append the new row to the table
+$("#train-schedule-table > tbody").append("<tr><td>" + trainName )
 
 });
