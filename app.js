@@ -58,7 +58,12 @@ var trainTime = childsnapshot.val().tTime;
  // first Train pushed back to make sure it comes before current time
 var firstTimeConverted = moment(trainTime, "HH:mm");
 console.log(firstTimeConverted);
-
+// Current time
 var currentTime = moment().format("HH:mm");
 console.log("Current Time: " + currentTime);
+
+// store difference between currentTime and fisrt train converted in a variable
+var timeDiff = moment().diff(moment(firstTimeConverted), "minutes");
+console.log(trainTime);
+  console.log("Difference in Time: " + timeDiff);
 });
