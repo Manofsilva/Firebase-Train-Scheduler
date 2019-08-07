@@ -1,0 +1,31 @@
+body {
+    background-image: url("../images/Train.PNG");
+    background-color: lavender;
+    background-size: 200px;
+}
+.jumbotron{
+    background-image: url("../images/KidTrain.jpg");
+    background-color:#116bd1;
+    color: palevioletred;
+    border:5px grey solid;
+    font: 2em Arial,sans-serif;
+  }
+  #train-schedule-table{
+    background-color:#efffff;
+    color:black;
+    font-size:20px;
+    font: bold;
+  }
+  #train-name-input,#destination-input,#time-input,#frequency-input{
+    color:black;
+    font-size:18px;
+    background-color:#efffff;
+  }
+  .form-group{
+    color: black;
+    font-size:20px;
+  }
+  .btn{
+    background-color:green;
+    font-size:20px;
+  }
