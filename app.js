@@ -62,8 +62,17 @@ console.log(firstTimeConverted);
 var currentTime = moment().format("HH:mm");
 console.log("Current Time: " + currentTime);
 
-// store difference between currentTime and fisrt train converted in a variable
+// store difference between currentTime and firt train that gets entered by the user and convert it in a variable
 var timeDiff = moment().diff(moment(firstTimeConverted), "minutes");
 console.log(trainTime);
   console.log("Difference in Time: " + timeDiff);
+
+// find the remainder of the time left and store in a variable. 
+var timeRemainder = timeDiff % frequency;
+console.log(timeRemainder);
+
+// How many minutes until the next train arrives and strore in a new variable
+var minToTrain = frequency - timeRemainder;
+console.log("Arrival Time: " + minToTrain);
+
 });
