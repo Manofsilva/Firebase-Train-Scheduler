@@ -73,6 +73,11 @@ console.log(timeRemainder);
 
 // How many minutes until the next train arrives and strore in a new variable
 var minToTrain = frequency - timeRemainder;
-console.log("Arrival Time: " + minToTrain);
+console.log("Minutes Till Next Train: " + minToTrain);
+
+// When the next train is set to arrive
+var nextTrain = moment().add(minToTrain, "minutes").format("hh:mm")
+// console.log("Arrival Time: " + moment(nextTrain).format("hh:mm"));
+
 
 });
