@@ -48,4 +48,17 @@ $("#frequency-name-input").val("");
 // Create Firebase event for adding a new Train utilizing an .on child_added listener
 database.ref().on("child_added", function(childsnapshot) {
     console.log(childsnapshot.val());
-})
+
+// Store the childsnapshot values into variables
+var trainName = childsnapshot.val().tname;
+var destination = childsnapshot.val().place;
+var frequency = childsnapshot.val().freq;
+var trainTime = childsnapshot.val().tTime;
+
+ // first Train pushed back to make sure it comes before current time
+var firstTimeConverted = moment(trainTime, "HH:mm");
+console.log(firstTimeConverted);
+
+var currentTime = moment().format("HH:mm");
+console.log("Current Time: " + currentTime);
+});
